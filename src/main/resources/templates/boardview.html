@@ -310,8 +310,9 @@
         </div>
         <div class="bt_wrap">
             <a href="list" class="on">목록</a>
-            <a th:href="@{/board/delete(id=${board.id})}">글삭제</a>
+            <a th:href="@{/board/delete(id=${board.id})}">글 삭제</a>
             <a th:href="@{/board/modify/{id}(id = ${board.id})}">수정</a>
+            <a th:href="@{/board/deleteAll(id=${board.id})}">전체 글 삭제</a>
         </div>
     </div>
 </div>

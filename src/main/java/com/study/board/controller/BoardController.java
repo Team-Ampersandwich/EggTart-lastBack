@@ -86,6 +86,17 @@ public class BoardController {
         return "message";
     }
 
+    @GetMapping("/board/deleteAll")
+    public String boardDeleteAll(Integer id, Model model) {
+
+        boardService.boardAllDelete(id);
+
+        model.addAttribute("message", "전체 글 삭제가 완료되었습니다.");
+        model.addAttribute("searchUrl", "/board/list");
+
+        return "message";
+    }
+
     @GetMapping("/board/modify/{id}")
     public String boardModify(@PathVariable("id") Integer id,
                               Model model) {

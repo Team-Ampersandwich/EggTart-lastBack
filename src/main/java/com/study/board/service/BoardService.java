@@ -44,4 +44,10 @@ public class BoardService {
 
         boardRepository.deleteById(id);
     }
+
+    //전체 게시글 삭제
+    public void boardAllDelete(Integer id) {
+
+        boardRepository.deleteAll();
+    }
 }
