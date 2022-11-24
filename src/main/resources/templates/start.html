@@ -44,11 +44,19 @@
 
 </head>
 <style>
-    body {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main_wapper {
         padding: 0;
         margin: 0;
-        background-image: url(images/EggTartHomebackground.png);
-        background-size: 216vh;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background : url("https://cdn.discordapp.com/attachments/952887980111052881/1045256456590589952/EggTartHomebackground.png");
+        background-size: cover;
     }
     @font-face {
         font-family: 'KOTRAHOPE';
@@ -59,19 +67,21 @@
 
 
     .btn_box {
+        position: fixed;
+        top: 200px;
+        left: 100px;
         background-color: #EEB743;
-        position: absolute;
-        margin: 20% 0 0 4%;
         padding: 10px;
         border-radius: 20px;
-        /* opacity: 0.1; */
-        width: 470px;
-        height: 75px;
+        width: 500px;
+        height: 90px;
         opacity: 0.6;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
     }
     .btn_start {
-        position: absolute;
-        margin: 20% 0 0 5%;
         font-family: 'KOTRAHOPE';
         font-size: 80px;
         color: white;
@@ -80,10 +90,11 @@
 </style>
 
 <body>
-<div class="btn_box">
+<div class="main_wapper">
+    <div class="btn_box">
+    <a href="list" class="btn_start">타르트 구우러 가기</a>
+    </div>
 </div>
-
-<a href="list" class="btn_start">타르트 구우러 가기</a>
 
 </body>
 </html>
