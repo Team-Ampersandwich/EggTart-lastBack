@@ -1,0 +1,19 @@
+{
+  "name": "eggtart-back-main",
+  "version": "1.0.0",
+  "description": "\u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Ampersandwich/EggTart_last.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Ampersandwich/EggTart_last/issues"
+  },
+  "homepage": "https://github.com/Team-Ampersandwich/EggTart_last#readme"
+}
